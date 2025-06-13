@@ -1,0 +1,35 @@
+.sec1-new {
+  font-family: 'Roboto', sans-serif;
+  background: url(../images/vsl-new-bg.png) center bottom no-repeat;
+  background-size: cover;
+}
+
+.sec1-new .intro h1 {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 50px;
+    /*color: #fff000;*/
+    color: #fff;
+    text-align: center;
+}
+
+.bottle-1-new {
+  width: 75%;
+}
+.bottle-1-showcase {
+  width: 350px;
+  left: -3vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .sec1-new .intro h1 {
+    font-size: 36px;
+    line-height: 41px;
+	}
+}
+@media only screen and (max-width: 500px) {
+  .sec1-new .intro h1 {
+    font-size: 22px;
+    line-height: 28px;
+	}
+}
