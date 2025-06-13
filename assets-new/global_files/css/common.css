@@ -1,0 +1,76 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Lato;
+}
+@font-face {
+    font-family: CarroisGothic-Regular;
+    src: url(../fonts/carroisgothic/CarroisGothic-Regular.ttf);
+}
+@font-face {
+    font-family: DS-digital;
+    src: url(../fonts/digital/DS-DIGI.TTF);
+}
+.digital {
+    font-family: DS-digital;
+}
+.center-t {
+    text-align: center;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 45px;
+}
+h3 {
+    font-size: 31px;
+}
+h4 {
+    font-size: 33px;
+}
+h5 {
+    font-size: 35px;
+}
+h6 {
+    font-size: 30px;
+}
+p {
+    font-size: 23px;
+    font-family: Lato;
+}
+.f-30 {
+    font-size: 30px;
+}
+.f-50 {
+    font-size: 50px;
+}
+.f-45 {
+    font-size: 45px;
+}
+.f-40 {
+    font-size: 40px;
+}
+.f-25 {
+    font-size: 25px;
+}
+.container {
+    max-width: 1200px;
+}
+.magenta {
+    color: #660033;
+}
+.magenta-bg-linear {
+    background: linear-gradient(to right, #ac324d 0, #903462 100%);
+}
+.center {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.follow-bg-color {
+    background-color: #F2F2F2;
+}
+.logo-health {
+    image-rendering: -webkit-optimize-contrast;
+}

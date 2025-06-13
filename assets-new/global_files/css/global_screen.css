@@ -1,0 +1,53 @@
+@media screen and (max-width: 1220px) {  
+}
+
+@media screen and (max-width: 1096px) {
+}
+
+@media screen and (max-width: 970px) {   
+}
+
+@media screen and (max-width: 870px) {
+}
+
+@media screen and (max-width: 800px) {
+    .custom-footer ul li {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-menu-container {
+        display: flex;
+        flex-direction: column !important;
+    }
+}
+
+@media screen and (max-width: 720px) {
+}
+
+@media screen and (max-width: 700px) {    
+}
+
+@media screen and (max-width: 680px) {
+    .receipt-btn {
+        margin: 0px;
+    }
+    .contact-container {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 500px) {
+    .menu-item-label {
+        flex-direction: column;
+    }
+    .menu-item-text {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+}
