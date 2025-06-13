@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase Notification</title>
+</head>
+
+<body>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .notif-container{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    max-width: 300px;
+    text-align: center;
+    border: solid 3px #103a51;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #e6f7ff;
+    animation: slide-up 22s linear;
+    color: #103a51;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  @keyframes slide-up{
+    0%{
+      bottom: -300px;
+    }5%{
+      bottom: 0;
+    }95%{
+      opacity: 1;
+    }100%{
+      opacity: 0;
+    }
+  }
+
+  .notif-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .notif-content > p{
+    font-size: 16px;
+  }
+
+  .notif-container > img{
+    border-radius: 5px;
+    border: solid 2px #103a51;
+  }
+
+  .pn-verified-purchase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    max-width: fit-content;
+    border: solid 1px forestgreen;
+    border-radius: 50px;
+    padding: 3px;
+  }
+
+  .pn-verified-purchase > img{
+    max-width: 16px;
+  }
+
+  .pn-verified-purchase > p{
+    color: forestgreen;
+    font-size: 12px;
+  }
+  
+  @media screen and (max-width: 500px){
+    .notif-container{
+    	max-width: 500px;
+      width: 100%;
+    	border-top: 2px solid #103a51;
+    	border-left: none;
+    	border-right: none;
+    	border-bottom: none;
+    	border-radius: 0;
+      margin: 0;
+      padding: 0;
+    }
+    .notif-content {
+    	padding: 10px;
+		}
+    .notif-container > img {
+    	margin: 10px;
+		}
+  }
+</style>
+
+<div class="notif-container">
+  <img src="./assets/images/California.PNG?=v2">
+  <div class="notif-content">
+    <p>
+      <b>James</b> from <b>California</b> just bought <b>6 bottles</b> of <b>ProNerve6</b>
+    </p>
+    <div class="pn-verified-purchase">
+      <img src="./assets/images/accept.png">
+      <p>
+        Verified Purchase
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="notif-container">
+  <img src="./assets/images/Texas.PNG?=v2">
+  <div class="notif-content">
+    <p>
+      <b>Mary</b> from <b>Texas</b> just bought <b>6 bottles</b> of <b>ProNerve6</b>
+    </p>
+    <div class="pn-verified-purchase">
+      <img src="./assets/images/accept.png">
+      <p>
+        Verified Purchase
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="notif-container">
+  <img src="./assets/images/Florida.PNG?=v2">
+  <div class="notif-content">
+    <p>
+      <b>Robert</b> from <b>Florida</b> just bought <b>3 bottles</b> of <b>ProNerve6</b>
+    </p>
+    <div class="pn-verified-purchase">
+      <img src="./assets/images/accept.png">
+      <p>
+        Verified Purchase
+      </p>
+    </div>
+  </div>
+</div>
+  
+<div class="notif-container">
+  <img src="./assets/images/Pennsylvania.PNG?=v2">
+  <div class="notif-content">
+    <p>
+      <b>Patricia</b> from <b>Pennsylvania</b> just bought <b>6 bottles</b> of <b>ProNerve6</b>
+    </p>
+    <div class="pn-verified-purchase">
+      <img src="./assets/images/accept.png">
+      <p>
+        Verified Purchase
+      </p>
+    </div>
+  </div>
+</div>
+  
+<div class="notif-container">
+  <img src="./assets/images/Ohio.PNG?=v2">
+  <div class="notif-content">
+    <p>
+      <b>John</b> from <b>Ohio</b> just bought <b>6 bottles</b> of <b>ProNerve6</b>
+    </p>
+    <div class="pn-verified-purchase">
+      <img src="./assets/images/accept.png">
+      <p>
+        Verified Purchase
+      </p>
+    </div>
+  </div>
+</div>
+  
+<div class="notif-container">
+  <img src="./assets/images/Minnesota.PNG?=v2">
+  <div class="notif-content">
+    <p>
+      <b>Jennifer</b> from <b>Minnesota</b> just bought <b>3 bottles</b> of <b>ProNerve6</b>
+    </p>
+    <div class="pn-verified-purchase">
+      <img src="./assets/images/accept.png">
+      <p>
+        Verified Purchase
+      </p>
+    </div>
+  </div>
+</div>
+  
+<div class="notif-container">
+  <img src="./assets/images/Virginia.PNG?=v2">
+  <div class="notif-content">
+    <p>
+      <b>Michael</b> from <b>Virginia</b> just bought <b>3 bottles</b> of <b>ProNerve6</b>
+    </p>
+    <div class="pn-verified-purchase">
+      <img src="./assets/images/accept.png">
+      <p>
+        Verified Purchase
+      </p>
+    </div>
+  </div>
+</div>
+  
+<div class="notif-container">
+  <img src="./assets/images/Illinois.PNG?=v2">
+  <div class="notif-content">
+    <p>
+      <b>Linda</b> from <b>Illinois</b> just bought <b>6 bottles</b> of <b>ProNerve6</b>
+    </p>
+    <div class="pn-verified-purchase">
+      <img src="./assets/images/accept.png">
+      <p>
+        Verified Purchase
+      </p>
+    </div>
+  </div>
+</div>
+  
+<div class="notif-container">
+  <img src="./assets/images/Georgia.PNG?=v2">
+  <div class="notif-content">
+    <p>
+      <b>David</b> from <b>Georgia</b> just bought <b>3 bottles</b> of <b>ProNerve6</b>
+    </p>
+    <div class="pn-verified-purchase">
+      <img src="./assets/images/accept.png">
+      <p>
+        Verified Purchase
+      </p>
+    </div>
+  </div>
+</div>
+  
+<div class="notif-container">
+  <img src="./assets/images/Michigan.PNG?=v2">
+  <div class="notif-content">
+    <p>
+      <b>Elizabeth</b> from <b>Michigan</b> just bought <b>3 bottles</b> of <b>ProNerve6</b>
+    </p>
+    <div class="pn-verified-purchase">
+      <img src="./assets/images/accept.png">
+      <p>
+        Verified Purchase
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+const notifElements = document.querySelectorAll('.notif-container');
+var currentIndex = Math.floor(Math.random() * notifElements.length);
+
+function showNextNotification() {
+  currentIndex = (currentIndex + 1) % notifElements.length;
+
+  notifElements[currentIndex].style.display = 'flex';
+
+//  console.log(currentIndex);
+}
+  
+  function notifStart() {
+    	const intervalID = setInterval(showNextNotification, 30000);
+      showNextNotification();
+  }
+
+  window.onload = function () {
+      setTimeout(notifStart, 2000);
+  };
+
+
+  function hideElementsOnAnimationEnd(event) {
+  if (event.animationName === 'slide-up') {
+    const elements = document.querySelectorAll('.notif-container');
+      elements.forEach(element => {
+        element.style.display = 'none';
+      });
+    }
+  }
+
+  const notifContainers = document.querySelectorAll('.notif-container');
+
+  notifContainers.forEach(container => {
+    container.addEventListener('animationend', hideElementsOnAnimationEnd);
+  });
+</script>
+
+</body>
+
+</html>
