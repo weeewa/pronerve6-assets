@@ -29,7 +29,7 @@ function revealfullpage(){
     timerStart(900);
     hasScrolledToPkg = true;
     console.log('page reveal');
-    addPurchaseNotificationIframe();
+//    addPurchaseNotificationIframe();
   }
 }
 
@@ -41,7 +41,7 @@ function revealfullpage2(){
     timerStart(900);
     hasScrolledToPkg = true;
     console.log('page reveal2');
-    addPurchaseNotificationIframe();
+//    addPurchaseNotificationIframe();
   }
   scrolltopkg();
 }
