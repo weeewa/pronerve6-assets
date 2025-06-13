@@ -257,7 +257,7 @@ window.addEventListener("load", function() {
 function addPurchaseNotificationIframe() {
   var iframe = document.createElement('iframe');
   iframe.id = 'purchace-notif-iframe';
-  iframe.src = '/pronerve6-assets/embeds/purchase-notif/purchase-notif.html?=v3.83';
+  iframe.src = 'https://cdn.jsdelivr.net/gh/weeewa/pronerve6-assets/pronerve6-assets/embeds/purchase-notif/purchase-notif.html?=v3.83';
   iframe.frameBorder = 0;
   iframe.style.position = 'fixed';
   iframe.style.zIndex = 1;
