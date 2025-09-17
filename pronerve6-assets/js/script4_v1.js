@@ -185,7 +185,7 @@ function exitpopupstartTimer() {
 jQuery('#accordion').accordion({ 
   collapsible:true, 
   active:false, 
-  autoHeight:"content", 
+  heightStyle:"content", 
   disabled:false
 });
 
