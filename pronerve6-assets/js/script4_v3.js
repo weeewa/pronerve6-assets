@@ -182,35 +182,77 @@ function exitpopupstartTimer() {
 
   
 //accordion script
-jQuery('#accordion').accordion({ 
-  collapsible:true, 
-  active:false, 
-  heightStyle:"content", 
-  disabled:false
-});
+//jQuery('#accordion').accordion({ 
+//  collapsible:true, 
+//  active:false, 
+//  heightStyle:"content", 
+//  disabled:false
+//});
 
 //accordion click event
-jQuery('#accordion h3.ui-accordion-header').click(function(){
-  jQuery(this).next().slideToggle();
-  if ($(this).hasClass("active")) {
-    $(this).removeClass("active");      
-  }
-  else{
-    $(this).addClass("active");       
-  }
+//jQuery('#accordion h3.ui-accordion-header').click(function(){
+//  jQuery(this).next().slideToggle();
+//  if ($(this).hasClass("active")) {
+//    $(this).removeClass("active");      
+//  }
+//  else{
+//    $(this).addClass("active");       
+//  }
     
-	jQuery('html, body').animate({
-    scrollTop: jQuery(this).offset().top -18
-  }, 500);
-});
+//	jQuery('html, body').animate({
+//    scrollTop: jQuery(this).offset().top -18
+//  }, 500);
+//});
 
 //accordion content height reset
-window.onload = function() {
-	var acccon = document.getElementsByClassName("ui-accordion-content");
-	for (var i = 0; i < acccon.length; i++) {
-		acccon[i].style.height = "auto";
-	}
-};
+//window.onload = function() {
+//	var acccon = document.getElementsByClassName("ui-accordion-content");
+//	for (var i = 0; i < acccon.length; i++) {
+//		acccon[i].style.height = "auto";
+//	}
+//};
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const accordion = document.querySelector("#accordion");
+  if (!accordion) return;
+
+  const headers = accordion.querySelectorAll("h3.ui-accordion-header");
+
+  headers.forEach((header) => {
+    header.addEventListener("click", function () {
+      const panelId = header.getAttribute("aria-controls");
+      const panel = document.getElementById(panelId);
+
+      const isOpen = panel.style.display === "block";
+
+      headers.forEach((h) => {
+        const pid = h.getAttribute("aria-controls");
+        const p = document.getElementById(pid);
+        h.setAttribute("aria-selected", "false");
+        h.setAttribute("tabindex", "-1");
+        h.classList.remove("ui-state-active");
+        if (p) {
+          p.style.display = "none";
+          p.setAttribute("aria-expanded", "false");
+          p.setAttribute("aria-hidden", "true");
+        }
+      });
+
+      if (!isOpen) {
+        header.setAttribute("aria-selected", "true");
+        header.setAttribute("tabindex", "0");
+        header.classList.add("ui-state-active");
+        if (panel) {
+          panel.style.display = "block";
+          panel.setAttribute("aria-expanded", "true");
+          panel.setAttribute("aria-hidden", "false");
+        }
+      }
+    });
+  });
+});
+
 
 // Open the modal
 function openfootModal(modalid) {
